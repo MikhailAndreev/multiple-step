@@ -1,0 +1,371 @@
+@font-face {
+    font-family: "HelveticaNeue Regular";
+    src: url("../../Fonts/HelveticaNeue Regular.ttf") format('ttf');
+}
+
+@font-face {
+    font-family: "HelveticaNeue Medium";
+    src: url("../../Fonts/HelveticaNeue-Medium(2).otf") format('otf');
+}
+@font-face {
+    font-family: "HelveticaNeueBold";
+    src: url("../../Fonts/HelveticaNeueBold.ttf") format('ttf');
+}
+@font-face {
+    font-family: "HelveticaNeue Bold Italic";
+    src: url("../../Fonts/HelveticaNeueBoldItalic.ttf") format('ttf');
+}
+@font-face {
+    font-family: "Helvetica Neue Light";
+    src: url("../../Fonts/HelveticaNeueLight.ttf") format('ttf');
+}
+
+
+
+.wrapper{
+    width: 400px;
+    background-color: white;
+    font-family: Helvetica Neue, sans-serif;
+}
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 300px;
+    }
+}
+.wrapper h1{
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    color: #5A1094;
+}
+
+.steps{
+    display: flex;
+    margin: 0 0 0 40px;
+}
+.steps *{
+    height: 22px;
+    padding: 4px 25px 0 5px;
+}
+
+.disableStep{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #979797;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+.activStep{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #5A1094;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+.steps p:first-of-type{
+    padding: 4px 25px 0 0;
+    background: url("../../Assets/images/arrow-right.png") no-repeat top 1px right 4px;
+    background-size: 12px 22px;
+}
+
+.steps p:nth-child(2){
+    padding: 4px 25px 0 5px;
+    background: url("../../Assets/images/arrow-right.png") no-repeat top 1px right 4px;
+    background-size: 12px 22px;
+}
+
+form {
+    width: 320px;
+    border: none;
+    margin: 0 0 0 40px;
+}
+
+form input{
+    width: 100%;
+    height: 40px;
+    padding: 0 0 0 10px;
+    margin: 6px 0 10px 0;
+    border: 1px solid #DEDCDC;
+    border-radius: 5px;
+}
+form input::placeholder{
+    font-family: Helvetica Neue, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #6B6B6B;
+    text-transform: none;
+}
+fieldset {
+    position: relative;
+    border: none;
+    padding: 0 0 0 0;
+    margin: 20px 0 0 0;
+}
+fieldset legend, fieldset label {
+    font-size: 16px;
+    line-height: 18px;
+    color: #5A1094;
+}
+.phoneSec {
+    width: 100%;
+    display: flex;
+}
+.phoneSec p {
+    padding: 0 0 0 10px;
+    width: 120px;
+    font-family: Helvetica Neue, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 14px;
+    color: #777879;
+}
+
+.userName {
+    display: block;
+
+}
+.errorInput{
+    display: block;
+    background-color:rgba(248, 231, 28, 0.07);
+}
+
+.formInput{
+    display: block;
+}
+.formInputCardHolder{
+    display: block;
+    text-transform: uppercase;
+}
+.userPhone {
+    display: inline-block;
+    width: 180px;
+}
+.country{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.userZip{
+    width: 120px;
+}
+.errorUserZip{
+    width: 120px;
+    background-color:rgba(248, 231, 28, 0.07);
+}
+.inputCountry{
+     width: 180px;
+
+ }
+
+
+.inputCountry::placeholder{
+    width: 180px;
+    background: url("../../Assets/images/arrow-down.png") no-repeat center right 10px;
+}
+
+.errorInputCountry{
+    width: 180px;
+    background-color:rgba(248, 231, 28, 0.07);
+}
+.continueBtn{
+    margin: 10px 0 0 0;
+    width: 180px;
+    height: 45px;
+    font-family: "Helvetica Neue Light", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    background: rgba(90, 16, 148, 0.8);
+    border: 1px solid rgba(67, 28, 93, 0.8);
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.billingTitle{
+    width: 100%;
+    display: flex;
+}
+.billingTitle p{
+    padding: 12px 0 0 15px;
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #5A1094;
+    cursor: pointer;
+}
+.secureInf{
+    width: 100%;
+    white-space: nowrap;
+    display: flex;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    color: #6B6B6B;
+}
+.secureInf p{
+    height: 30px;
+    margin: 20px 0 0 0;
+    padding: 2px 0 0 25px;
+    background: url("../../Assets/images/lock.png") no-repeat left 1px bottom 5px;
+    background-size: 20px 25px;
+}
+
+.cardInf{
+    width: 100%;
+    display: flex;
+    padding: 10px 0 20px 0;
+}
+.expDate{
+    width: 95px;
+    margin: 6px 0 0 0;
+}
+.errExpDate{
+    width: 95px;
+    margin: 6px 0 0 0;
+    background-color:rgba(248, 231, 28, 0.07);
+
+}
+.secCode{
+    width: 95px;
+    margin: 6px 82px 0 0;
+}
+.errSecCode{
+    width: 95px;
+    margin: 6px 82px 0 0;
+    background-color:rgba(248, 231, 28, 0.07);
+
+}
+
+.success {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0 0 40px;
+}
+
+.success p:first-of-type{
+    font-family: HelveticaNeue, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2B2525;
+}
+
+.success p{
+    font-family: "Helvetica", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #2B2525;
+}
+.success a{
+    font-family: "Helvetica", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #5A1094;
+}
+.success strong{
+    font-family: HelveticaNeueBold, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #2B2525;
+}
+
+.success span{
+    font-family: HelveticaNeue, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    cursor: pointer;
+    color: #5A1094;
+}
+
+.geocode {
+    top: 146px;
+    left: 290px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../../Assets/images/detect geolocation.png") no-repeat;
+    cursor: pointer;
+}
+.errorMsg{
+    position: absolute;
+    width: 210px;
+    height: 35px;
+    padding: 10px 5px 0 10px;
+    bottom: 110px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: 1px solid rgba(222, 220, 220, 0.695907);
+    box-sizing: border-box;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    color: #D0021B;
+}
+.errorMsgStep2{
+    position: absolute;
+    width: 210px;
+    height: 35px;
+    padding: 10px 5px 0 10px;
+    top: -12px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: 1px solid rgba(222, 220, 220, 0.695907);
+    box-sizing: border-box;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    color: #D0021B;
+}
+.errorMsg3{
+    position: absolute;
+    width: 210px;
+    height: 35px;
+    padding: 10px 5px 0 10px;
+    bottom: 53px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: 1px solid rgba(222, 220, 220, 0.695907);
+    box-sizing: border-box;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    color: #D0021B;
+}
+.emailInvalid{
+    width: 210px;
+    height: 35px;
+    padding: 10px 10px 5px 10px;
+    margin: 0 10px 0 0;
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: 1px solid rgba(222, 220, 220, 0.695907);
+    box-sizing: border-box;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    color: #D0021B;
+}
